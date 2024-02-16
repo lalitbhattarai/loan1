@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "name": "loan",
+  "version": "1.0.0",
+  "main": "index.js",
+  
+  "scripts": {
+    "build": "npx tailwindcss -i ./contact.css -o ./dist/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

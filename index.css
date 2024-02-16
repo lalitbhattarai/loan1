@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family:'Poppins', sans-serif !important;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+   .number-title{
+    margin: 0 10px 0 0;
+}
+
+.blank2 {
+    background-color: #ffffff;
+    height: 20px;
+    width: 100%;
+    color: red;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: -1px; 
+}
+
+nav {
+    background-color: #ffffff;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    margin-top: 50px;
+}
+
+
+.blank {
+    background-color: #0672e5;
+    height: 137px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 18px;
+}
+
+
+
+.blank p {
+    display: inline-block;
+    animation: moveText 20s linear infinite;
+    margin: -8px; 
+}
+
+
+.blank2 p {
+    display: inline-block;
+    animation: moveText 20s linear infinite;
+    margin: -8px;
+}
+
+@keyframes moveText {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+label.logo {
+    color: rgb(70, 67, 67);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+
+nav ul {
+    float: right;
+    margin-right: 80px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 33px;
+}
+
+nav ul li a {
+    color: rgb(88, 74, 74);
+    font-size: 15px;
+    text-transform: uppercase;
+    font-style: RGI;
+}
+
+a.active, a:hover {
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    right: 20px;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+    z-index: 999; 
+}
+
+#check {
+    display: none;
+}
+
+/* Dropdown menu SABAI LAI */
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f5f5e0;
+    width: auto;
+    line-height: 1.5;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content {
+    margin-top: -15px; 
+    width: 200px;
+}
+
+.dropdown-content a {
+    padding: 5px 10px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 4px 5px;
+    font-size: 12px;
+    text-decoration: none;
+    display: block;
+    border: 1px solid black;
+    opacity: 0;
+    animation: fadeInItem 0.5s ease-in-out forwards;
+    animation-delay: 0.1s;
+    width: 100%;
+}
+
+.dropdown-content a:hover {
+    background-color: #000000;
+}
+
+
+
+@keyframes fadeInItem {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.dropdown-content a:hover {
+    background-color: #d5d5d3;
+}
+
+
+
+
+/* slide wala images */
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.images {
+    display: flex;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+    margin-top: 156px;
+    transition: transform 1.5s ease-in-out; 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* Previous and next buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+
+
+/* Small images */
+.loan-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.loan-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.loan-text p {
+    margin-bottom: 10px;
+}
+
+.loan-image {
+    flex: 1;
+    text-align: center;
+}
+
+.loan-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* CSS for Text and Image Section */
+.centered-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px; 
+    margin-bottom: 118px;
+}
+
+.line-container {
+    flex: 1 0 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.line-container p {
+    margin-right: 10px;
+    margin: 0 0 0 30px;
+}
+
+.line-container img {
+    width: 244px;
+    height: 77px;
+    margin-top: 11px;
+}
+div.line-container {
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+div.line-container:hover {
+    background-color: #b4b5ae;
+    transform: scale(1.1);
+}
+
+div.line-container img,
+div.line-container p {
+    transition: transform 0.3s ease-in-out;
+}
+
+div.line-container:hover img,
+div.line-container:hover p {
+    transform: scale(1);
+}
+
+
+/* certificate */
+.certi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0; 
+    background-color: #bcb8b8; 
+    margin-top: 170px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.certi-content {
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 30px; 
+}
+
+.certi-content h2 {
+    font-size: 36px;
+    white-space: nowrap;
+    margin-bottom: 50px;
+    color: #333;
+    margin-top: 70px;
+}
+
+.certi-content p {
+    width: 90%;
+    font-size: 18px;
+    margin-bottom: 50px;
+    color: #333;
+    margin-top: 48px;
+}
+
+
+
+
+
+p {
+    margin: 25px;
+}
+
+
+
+
+
+/* Media queries */
+@media (max-width: 750px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1444px) {
+    .checkbtn {
+        display: inline-block; 
+        position: absolute;
+        top: 0px; 
+        right: 20px;
+    }
+    .centered-container{
+        margin-top: 0px;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: -55px;
+        left: -100%;
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    .dropdown-content {
+        display: none;
+    }
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+    a:hover, a.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+@media (max-width: 1300px) {
+    .certi-content {
+        max-width: 23%; 
+    }
+    .certi-content h2{
+        margin-left: -70px;
+    }
+    .certi-content p{
+        margin-left: -210px;
+        width: 280%;
+    }
+    .certi-content h2.animate,
+    .certi-content p.animate {
+        animation: none; 
+    }
+    .number-title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 31px;
+    }
+}
+
+@media (max-width: 800px) {
+    .certi-content h2{
+        white-space: pre-wrap;
+        width: 248%;
+        margin-left: -140px;
+
+}
+    .trustimg{
+    flex-direction: column;
+   }
+
+.certi-content p{
+    margin-left: -56px;
+}
+}
+@media (max-width: 1000px) {
+
+    .certi-content p{
+        margin-left: -184px;
+        width: 280%;
+    }
+}
+
+@media (max-width: 800px) {
+    .certi-content h2{
+        white-space: pre-wrap;
+        width: 315%;
+        margin-left: -120px;
+    }
+    .certi-content p{
+        margin-left: -104px;
+        width: 280%;
+    }
+
+}
+@media (max-width: 400px){
+.certi-content h2 {
+    white-space: pre-wrap;
+    width: 277%;
+    margin-left: -106px;
+}
+}
